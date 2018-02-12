@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>001-手风琴效果</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			width: 1080px;
+			height: 440px;
+			margin: 100px auto;
+			border: 1px solid #000;
+			list-style: none;
+			overflow: hidden;
+		}
+		ul li{
+			float: left;
+			width: 180px;
+			-webkit-transition: width 0.5s;
+			     -o-transition: width 0.5s;
+			        transition: width 0.5s;
+		}
+		ul:hover li{
+			width: 150px;
+		}
+		ul li:hover{
+			width: 330px;
+		}
+	</style>
+</head>
+<body>
+<!--
+	实现过渡效果的步骤
+	1. 编写基本的页面结构和样式
+	2. 修改需要变化的属性
+	3. 给修改属性的元素添加过渡效果
+-->	
+<ul>
+	<li><img src="images/ad1.jpg" alt=""></li>
+	<li><img src="images/ad2.jpg" alt=""></li>
+	<li><img src="images/ad3.jpg" alt=""></li>
+	<li><img src="images/ad4.jpg" alt=""></li>
+	<li><img src="images/ad5.jpg" alt=""></li>
+	<li><img src="images/ad6.jpg" alt=""></li>
+</ul>
+</body>
+</html>
